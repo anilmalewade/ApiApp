@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: snappea_development
+  username: postgres
+  password: postgres
+
+test:
+  <<: *default
+  database: snappea_test
+  username: postgres
+  password: postgres
+
+production:
+  <<: *default
+  database: snappea_production
+  username: postgres
+  password: postgres
+  password: <%= ENV['NOTEAPP_DATABASE_PASSWORD'] %>

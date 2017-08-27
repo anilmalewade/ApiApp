@@ -1,0 +1,172 @@
+{
+	"id": "f255359c-17b7-86c5-c081-b0014813d6a3",
+	"name": "ApiApp copy",
+	"description": "",
+	"order": [
+		"050e1dcc-2f2e-43ff-0d65-d9b8612ed33d",
+		"55f7cb33-6560-b5f4-4a76-ae9d3e82f3da",
+		"0cad2ec9-4333-d361-009d-0139547460be",
+		"92a229de-66cd-9abc-55bd-6ef33a79ca16"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1503756266236,
+	"owner": "2652170",
+	"public": false,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "050e1dcc-2f2e-43ff-0d65-d9b8612ed33d",
+			"headers": "Authorization: Token token=\"96cde991a5ab46538e0922f3e3d15bc0\"\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Token token=\"96cde991a5ab46538e0922f3e3d15bc0\"",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/restaurants",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1503817339124,
+			"name": "restaurants_all",
+			"description": "",
+			"collectionId": "f255359c-17b7-86c5-c081-b0014813d6a3",
+			"responses": [],
+			"collection_id": "f255359c-17b7-86c5-c081-b0014813d6a3"
+		},
+		{
+			"id": "0cad2ec9-4333-d361-009d-0139547460be",
+			"headers": "Authorization: Token token=\"96cde991a5ab46538e0922f3e3d15bc0\"\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Token token=\"96cde991a5ab46538e0922f3e3d15bc0\"",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/restaurants/menu_items?id=1",
+			"queryParams": [
+				{
+					"key": "id",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f255359c-17b7-86c5-c081-b0014813d6a3",
+			"data": null,
+			"dataMode": "params",
+			"name": "restaurant_all_menu_items",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1503817169548,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "f255359c-17b7-86c5-c081-b0014813d6a3"
+		},
+		{
+			"id": "55f7cb33-6560-b5f4-4a76-ae9d3e82f3da",
+			"headers": "Authorization: Token token=\"96cde991a5ab46538e0922f3e3d15bc0\"\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Token token=\"96cde991a5ab46538e0922f3e3d15bc0\"",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/restaurants?page=1",
+			"queryParams": [
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f255359c-17b7-86c5-c081-b0014813d6a3",
+			"data": null,
+			"dataMode": "params",
+			"name": "restaurants_with_per_page",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1503760919612,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "f255359c-17b7-86c5-c081-b0014813d6a3"
+		},
+		{
+			"id": "92a229de-66cd-9abc-55bd-6ef33a79ca16",
+			"headers": "Authorization: Token token=\"96cde991a5ab46538e0922f3e3d15bc0\"\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Token token=\"96cde991a5ab46538e0922f3e3d15bc0\"",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/restaurants/menu_items?id=1&page=1",
+			"queryParams": [
+				{
+					"key": "id",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f255359c-17b7-86c5-c081-b0014813d6a3",
+			"data": null,
+			"dataMode": "params",
+			"name": "menu_items_with_per_page",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1503775329202,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "f255359c-17b7-86c5-c081-b0014813d6a3"
+		}
+	]
+}
